@@ -1,5 +1,5 @@
 module.exports = {
-  siteUrl: "https://ghostbot.tk",
+  siteUrl: "https://ncis-fans.ml",
   generateRobotsTxt: true, // (optional),
   exclude: ["error"],
 };

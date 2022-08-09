@@ -1,3 +1,8 @@
+For for Ncis Fans Discord Server:
+Forked by Totto#4754 Aka #Ellick.
+
+Git URl https://github.com/Totto16/ghostybot
+
 [![banner](https://github.com/Dev-CasperTheGhost/ghostybot/blob/main/.github/Ghostybot-banner.png?raw=true)](https://ghostybot.caspertheghost.me/add)
 
 ![license](https://img.shields.io/github/license/dev-caspertheghost/ghostybot?color=gr)

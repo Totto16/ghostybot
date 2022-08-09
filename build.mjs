@@ -12,15 +12,15 @@ const data = buildSync({
   outdir: "dist",
   platform: "node",
   entryPoints: paths,
-  target: "node16",
+  target: "node18",
   format: "cjs",
   logLevel: "info",
 });
 
 if (data.warnings.length > 0) {
-  console.info(yellowBright("GhostyBot built with errors"));
+  console.info(yellowBright("NCIS-Bot built with errors"));
 } else if (data.errors.length > 0) {
   console.error(red("Encountered errors when building"));
 } else {
-  console.info(green("\n\n 🎉🎉 Built GhostyBot without errors! 🎉🎉\n\n"));
+  console.info(green("\n\n 🎉🎉 Built NCIS-Bot without errors! 🎉🎉\n\n"));
 }

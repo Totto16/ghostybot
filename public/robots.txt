@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://ghostbot.tk
+Host: https://ncis-fans.ml
 
 # Sitemaps
-Sitemap: https://ghostbot.tk/sitemap.xml
+Sitemap: https://ncis-fans.ml/sitemap.xml

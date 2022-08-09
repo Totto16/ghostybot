@@ -10,12 +10,12 @@ module.exports = {
       {
         source: "/add",
         destination:
-          "https://discord.com/oauth2/authorize?client_id=632843197600759809&scope=bot+applications.commands&permissions=8",
+          "https://discord.com/oauth2/authorize?client_id=759395211713052724&scope=bot+applications.commands&permissions=8",
         permanent: true,
       },
       {
         source: "/support",
-        destination: "https://discord.gg/XxHrtkA",
+        destination: "https://discord.gg/wF4FK7me2P",
         permanent: true,
       },
       {
