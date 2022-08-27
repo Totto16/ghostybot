@@ -1555,7 +1555,7 @@
           "type": "select",
           "response": {
             "correct": "a Kate",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -1730,7 +1730,7 @@
           "type": "select",
           "response": {
             "correct": "Star of David",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -1926,7 +1926,7 @@
           "type": "select",
           "response": {
             "correct": "Shot",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -2101,7 +2101,7 @@
           "type": "select",
           "response": {
             "correct": "Mossad",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -2297,7 +2297,7 @@
           "type": "select",
           "response": {
             "correct": "Timothy McGee",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -2472,7 +2472,7 @@
           "type": "select",
           "response": {
             "correct": "C-4",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -2668,7 +2668,7 @@
           "type": "select",
           "response": {
             "correct": "Homicide Detective",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -2843,7 +2843,7 @@
           "type": "select",
           "response": {
             "correct": "Gerald",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -3039,7 +3039,7 @@
           "type": "select",
           "response": {
             "correct": "Jimmy",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -3182,7 +3182,7 @@
           "type": "select",
           "response": {
             "correct": "think",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -3378,7 +3378,7 @@
           "type": "select",
           "response": {
             "correct": "calisthenics",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -3533,7 +3533,7 @@
           "type": "textfield",
           "response": {
             "correct": "fox",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -3729,7 +3729,7 @@
           "type": "select",
           "response": {
             "correct": "Malaprop",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -3892,7 +3892,7 @@
           "type": "select",
           "response": {
             "correct": "False",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -4076,7 +4076,7 @@
           "type": "select",
           "response": {
             "correct": "Kate and Tony",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -4251,7 +4251,7 @@
           "type": "select",
           "response": {
             "correct": "A modified Hummer",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -4447,7 +4447,7 @@
           "type": "select",
           "response": {
             "correct": "Lt. Bud Roberts, Jr.",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -4622,7 +4622,7 @@
           "type": "select",
           "response": {
             "correct": "smoke inhalation following her townhouse fire",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -4818,7 +4818,7 @@
           "type": "select",
           "response": {
             "correct": "Shannon",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -4993,7 +4993,7 @@
           "type": "select",
           "response": {
             "correct": "NIS",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -5189,7 +5189,7 @@
           "type": "select",
           "response": {
             "correct": "porcupine",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -5364,7 +5364,7 @@
           "type": "select",
           "response": {
             "correct": "Sir",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -5560,7 +5560,7 @@
           "type": "select",
           "response": {
             "correct": "hookers",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -5735,7 +5735,7 @@
           "type": "select",
           "response": {
             "correct": "USS Seahawk",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -5931,7 +5931,7 @@
           "type": "select",
           "response": {
             "correct": "Probie",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -6106,7 +6106,7 @@
           "type": "select",
           "response": {
             "correct": "Morgan roadster",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -6278,7 +6278,7 @@
           "type": "select",
           "response": {
             "correct": "Secret Service agent",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -6453,7 +6453,7 @@
           "type": "select",
           "response": {
             "correct": "A married couple",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -6649,7 +6649,7 @@
           "type": "select",
           "response": {
             "correct": "Johns Hopkins and MIT",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -6804,7 +6804,7 @@
           "type": "select",
           "response": {
             "correct": "Ari Haswari",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -7000,7 +7000,7 @@
           "type": "select",
           "response": {
             "correct": "Thom E. Gemcity",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -7175,7 +7175,7 @@
           "type": "select",
           "response": {
             "correct": "Fart",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -7303,7 +7303,7 @@
           "type": "select",
           "response": {
             "correct": "She licked his ear",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -7534,7 +7534,7 @@
           "type": "select",
           "response": {
             "correct": "Never, ever bother Gibbs in interrogation.",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -7709,7 +7709,7 @@
           "type": "select",
           "response": {
             "correct": "Tom Morrow",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -7905,7 +7905,7 @@
           "type": "select",
           "response": {
             "correct": "Tony DiNardo",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -8080,7 +8080,7 @@
           "type": "select",
           "response": {
             "correct": "Ari Haswari",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -8276,7 +8276,7 @@
           "type": "select",
           "response": {
             "correct": "Tony",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -8451,7 +8451,7 @@
           "type": "select",
           "response": {
             "correct": "To save her daughter",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -8647,7 +8647,7 @@
           "type": "select",
           "response": {
             "correct": "Gunnery sergeant",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -8822,7 +8822,7 @@
           "type": "select",
           "response": {
             "correct": "Gerald",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -9018,7 +9018,7 @@
           "type": "select",
           "response": {
             "correct": "His father's very expensive ski suit.",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -9193,7 +9193,7 @@
           "type": "select",
           "response": {
             "correct": "Tony and Abby",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -9389,7 +9389,7 @@
           "type": "select",
           "response": {
             "correct": "Louis XV",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -9564,7 +9564,7 @@
           "type": "select",
           "response": {
             "correct": "A foot/shoe fetish",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -9760,7 +9760,7 @@
           "type": "select",
           "response": {
             "correct": "Kate is killed",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -9935,7 +9935,7 @@
           "type": "select",
           "response": {
             "correct": "\"Deep Six\"",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -10131,7 +10131,7 @@
           "type": "select",
           "response": {
             "correct": "Hearse",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -10306,7 +10306,7 @@
           "type": "select",
           "response": {
             "correct": "Agent Lee",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -10478,7 +10478,7 @@
           "type": "select",
           "response": {
             "correct": "true",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -10653,7 +10653,7 @@
           "type": "select",
           "response": {
             "correct": "Tom Morrow",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -10849,7 +10849,7 @@
           "type": "select",
           "response": {
             "correct": "Delilah",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -11024,7 +11024,7 @@
           "type": "select",
           "response": {
             "correct": "Stillwater, PA",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -11220,7 +11220,7 @@
           "type": "select",
           "response": {
             "correct": "Captured alive",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -11395,7 +11395,7 @@
           "type": "select",
           "response": {
             "correct": "Metsada",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -11591,7 +11591,7 @@
           "type": "select",
           "response": {
             "correct": "Suicide",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -11766,7 +11766,7 @@
           "type": "select",
           "response": {
             "correct": "Caf-Pow",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -11938,7 +11938,7 @@
           "type": "select",
           "response": {
             "correct": "True",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -12065,7 +12065,7 @@
           "type": "select",
           "response": {
             "correct": "False",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -12249,7 +12249,7 @@
           "type": "select",
           "response": {
             "correct": "Yankee White",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -12424,7 +12424,7 @@
           "type": "select",
           "response": {
             "correct": "Shot",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -12620,7 +12620,7 @@
           "type": "select",
           "response": {
             "correct": "Good Cop, Bad Cop",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -12795,7 +12795,7 @@
           "type": "select",
           "response": {
             "correct": "Recoil",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -12991,7 +12991,7 @@
           "type": "select",
           "response": {
             "correct": "Kelly",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -13166,7 +13166,7 @@
           "type": "select",
           "response": {
             "correct": "Military academy",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -13362,7 +13362,7 @@
           "type": "select",
           "response": {
             "correct": "Marine Corps recruiter",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -13537,7 +13537,7 @@
           "type": "select",
           "response": {
             "correct": "Sub Rosa",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -13733,7 +13733,7 @@
           "type": "select",
           "response": {
             "correct": "Hanged",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -13908,7 +13908,7 @@
           "type": "select",
           "response": {
             "correct": "Honey Dust",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -14104,7 +14104,7 @@
           "type": "select",
           "response": {
             "correct": "Because Tony got him fired from a former job",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -14279,7 +14279,7 @@
           "type": "select",
           "response": {
             "correct": "His first wife (Shannon)",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -14475,7 +14475,7 @@
           "type": "select",
           "response": {
             "correct": "Signet ring",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -14650,7 +14650,7 @@
           "type": "select",
           "response": {
             "correct": "1994",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -14846,7 +14846,7 @@
           "type": "select",
           "response": {
             "correct": "Victoria",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -15021,7 +15021,7 @@
           "type": "select",
           "response": {
             "correct": "Mac Fielding",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -15217,7 +15217,7 @@
           "type": "select",
           "response": {
             "correct": "Deep Six",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -15392,7 +15392,7 @@
           "type": "select",
           "response": {
             "correct": "\"Twilight\"",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -15588,7 +15588,7 @@
           "type": "select",
           "response": {
             "correct": "Tali",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -15763,7 +15763,7 @@
           "type": "select",
           "response": {
             "correct": "Pneumonic plague",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -15959,7 +15959,7 @@
           "type": "select",
           "response": {
             "correct": "In her paintings",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -16134,7 +16134,7 @@
           "type": "select",
           "response": {
             "correct": "Pneumonic plague",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -16290,7 +16290,7 @@
           "type": "select",
           "response": {
             "correct": "Rule #8",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -16405,7 +16405,7 @@
           "type": "select",
           "response": {
             "correct": "Rule #12",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -16581,7 +16581,7 @@
           "type": "select",
           "response": {
             "correct": "a memory card from a camera",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -16756,7 +16756,7 @@
           "type": "select",
           "response": {
             "correct": "DiNozzo",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -16952,7 +16952,7 @@
           "type": "select",
           "response": {
             "correct": "Rule number 51",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -17127,7 +17127,7 @@
           "type": "select",
           "response": {
             "correct": "You don't waste good",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -17323,7 +17323,7 @@
           "type": "select",
           "response": {
             "correct": "Hawaii",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -17498,7 +17498,7 @@
           "type": "select",
           "response": {
             "correct": "specific",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -17694,7 +17694,7 @@
           "type": "select",
           "response": {
             "correct": "Todd",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -17869,7 +17869,7 @@
           "type": "select",
           "response": {
             "correct": "Pauley Perrette",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -18065,7 +18065,7 @@
           "type": "select",
           "response": {
             "correct": "Gibbs",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -18240,7 +18240,7 @@
           "type": "select",
           "response": {
             "correct": "McGee",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -18424,7 +18424,7 @@
           "type": "select",
           "response": {
             "correct": "ASL",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -18587,7 +18587,7 @@
           "type": "select",
           "response": {
             "correct": "Bert",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -18783,7 +18783,7 @@
           "type": "select",
           "response": {
             "correct": "\"God, no.\"",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -18958,7 +18958,7 @@
           "type": "select",
           "response": {
             "correct": "\"Is that an offer?\"",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -19154,7 +19154,7 @@
           "type": "select",
           "response": {
             "correct": "She believed he murdered her father",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -19329,7 +19329,7 @@
           "type": "select",
           "response": {
             "correct": "You're signing my death warrant.",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -19525,7 +19525,7 @@
           "type": "select",
           "response": {
             "correct": "Norfolk, Virginia",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -19700,7 +19700,7 @@
           "type": "select",
           "response": {
             "correct": "Abby Sciuto",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -19896,7 +19896,7 @@
           "type": "select",
           "response": {
             "correct": "\"I'm sorry.\"",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -20051,7 +20051,7 @@
           "type": "select",
           "response": {
             "correct": "they are",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -20247,7 +20247,7 @@
           "type": "select",
           "response": {
             "correct": "Kelly",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -20422,7 +20422,7 @@
           "type": "select",
           "response": {
             "correct": "Ari Haswari",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -20618,7 +20618,7 @@
           "type": "select",
           "response": {
             "correct": "Never get personally involved in a case",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -20793,7 +20793,7 @@
           "type": "select",
           "response": {
             "correct": "who doesn't trust her man",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -20989,7 +20989,7 @@
           "type": "select",
           "response": {
             "correct": "Shannon",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -21164,7 +21164,7 @@
           "type": "select",
           "response": {
             "correct": "Rebecca",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -21360,7 +21360,7 @@
           "type": "select",
           "response": {
             "correct": "Homicide detective",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -21535,7 +21535,7 @@
           "type": "select",
           "response": {
             "correct": "Jeanne Benoit",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -21731,7 +21731,7 @@
           "type": "select",
           "response": {
             "correct": "Gibbs",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -21894,7 +21894,7 @@
           "type": "select",
           "response": {
             "correct": "To protect Gibbs",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -22090,7 +22090,7 @@
           "type": "select",
           "response": {
             "correct": "Sean Murray",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -22265,7 +22265,7 @@
           "type": "select",
           "response": {
             "correct": "See No Evil",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -22405,7 +22405,7 @@
           "type": "select",
           "response": {
             "correct": "Sarah McGee",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -22636,7 +22636,7 @@
           "type": "select",
           "response": {
             "correct": "For switching out evidence.",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -22811,7 +22811,7 @@
           "type": "select",
           "response": {
             "correct": "A cardboard cut out of Tony.",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -23007,7 +23007,7 @@
           "type": "select",
           "response": {
             "correct": "Jenny",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -23182,7 +23182,7 @@
           "type": "select",
           "response": {
             "correct": "Russian",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -23378,7 +23378,7 @@
           "type": "select",
           "response": {
             "correct": "Gibbs",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -23553,7 +23553,7 @@
           "type": "select",
           "response": {
             "correct": "Ducky and Duck",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -23729,7 +23729,7 @@
           "type": "select",
           "response": {
             "correct": "Couldn't live without you I guess",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -23904,7 +23904,7 @@
           "type": "select",
           "response": {
             "correct": "He doesn't have a sister",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -24088,7 +24088,7 @@
           "type": "select",
           "response": {
             "correct": "\"It's better to ask forgiveness than ask permission.\"",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -24263,7 +24263,7 @@
           "type": "select",
           "response": {
             "correct": "Mike",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -24439,7 +24439,7 @@
           "type": "select",
           "response": {
             "correct": "Green",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -24614,7 +24614,7 @@
           "type": "select",
           "response": {
             "correct": "Sean Murray",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -24810,7 +24810,7 @@
           "type": "select",
           "response": {
             "correct": "knife",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -24985,7 +24985,7 @@
           "type": "select",
           "response": {
             "correct": "Marine sniper",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -25161,7 +25161,7 @@
           "type": "select",
           "response": {
             "correct": "Walk",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -25276,7 +25276,7 @@
           "type": "textfield",
           "response": {
             "correct": "lead",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -25432,7 +25432,7 @@
           "type": "select",
           "response": {
             "correct": "wear the gown",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -25587,7 +25587,7 @@
           "type": "select",
           "response": {
             "correct": "implants",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -25743,7 +25743,7 @@
           "type": "select",
           "response": {
             "correct": "not to bluff",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -25918,7 +25918,7 @@
           "type": "select",
           "response": {
             "correct": "sawdust",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -26114,7 +26114,7 @@
           "type": "select",
           "response": {
             "correct": "break a mirror",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -26289,7 +26289,7 @@
           "type": "select",
           "response": {
             "correct": "under cover",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -26485,7 +26485,7 @@
           "type": "select",
           "response": {
             "correct": "crucify",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -26660,7 +26660,7 @@
           "type": "select",
           "response": {
             "correct": "Equatorial pygmies",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -26836,7 +26836,7 @@
           "type": "select",
           "response": {
             "correct": "Forced Entry",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -27011,7 +27011,7 @@
           "type": "select",
           "response": {
             "correct": "Heart Break",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -27207,7 +27207,7 @@
           "type": "select",
           "response": {
             "correct": "Gibbs",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -27382,7 +27382,7 @@
           "type": "select",
           "response": {
             "correct": "Angelina Jolie's",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -27578,7 +27578,7 @@
           "type": "select",
           "response": {
             "correct": "refrigerator",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -27753,7 +27753,7 @@
           "type": "select",
           "response": {
             "correct": "judges",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -27909,7 +27909,7 @@
           "type": "textfield",
           "response": {
             "correct": "Jedi Master",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -28064,7 +28064,7 @@
           "type": "select",
           "response": {
             "correct": "Ziva",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -28260,7 +28260,7 @@
           "type": "select",
           "response": {
             "correct": "Indianapolis",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -28435,7 +28435,7 @@
           "type": "select",
           "response": {
             "correct": "shortest",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -28631,7 +28631,7 @@
           "type": "select",
           "response": {
             "correct": "furniture",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -28806,7 +28806,7 @@
           "type": "select",
           "response": {
             "correct": "BS meter",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -29002,7 +29002,7 @@
           "type": "select",
           "response": {
             "correct": "\"A Weak Link\"",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -29177,7 +29177,7 @@
           "type": "select",
           "response": {
             "correct": "\"SWAK\"",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -29373,7 +29373,7 @@
           "type": "select",
           "response": {
             "correct": "Wild Turkey",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -29548,7 +29548,7 @@
           "type": "select",
           "response": {
             "correct": "folk",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -29744,7 +29744,7 @@
           "type": "select",
           "response": {
             "correct": "Abby",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -29919,7 +29919,7 @@
           "type": "select",
           "response": {
             "correct": "Director Shepherd",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -30115,7 +30115,7 @@
           "type": "select",
           "response": {
             "correct": "drive fast",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -30290,7 +30290,7 @@
           "type": "select",
           "response": {
             "correct": "Paris Hilton",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -30486,7 +30486,7 @@
           "type": "select",
           "response": {
             "correct": "anthill",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -30661,7 +30661,7 @@
           "type": "select",
           "response": {
             "correct": "song",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -30857,7 +30857,7 @@
           "type": "select",
           "response": {
             "correct": "speak to me anymore",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -31012,7 +31012,7 @@
           "type": "select",
           "response": {
             "correct": "limitations",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -31168,7 +31168,7 @@
           "type": "select",
           "response": {
             "correct": "Perfume",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -31303,7 +31303,7 @@
           "type": "select",
           "response": {
             "correct": "cop",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -31383,7 +31383,7 @@
           "type": "textfield",
           "response": {
             "correct": "18",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -31594,7 +31594,7 @@
           "type": "select",
           "response": {
             "correct": "Tim McGee",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -31769,7 +31769,7 @@
           "type": "select",
           "response": {
             "correct": "\"I think he's lost a contact\"",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -31953,7 +31953,7 @@
           "type": "select",
           "response": {
             "correct": "no",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -32116,7 +32116,7 @@
           "type": "select",
           "response": {
             "correct": "Never get personally involved on a case",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -32312,7 +32312,7 @@
           "type": "select",
           "response": {
             "correct": "its braless",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -32487,7 +32487,7 @@
           "type": "select",
           "response": {
             "correct": "in a pond",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -32683,7 +32683,7 @@
           "type": "select",
           "response": {
             "correct": "Home theatre guy",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -32858,7 +32858,7 @@
           "type": "select",
           "response": {
             "correct": "Damocles",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -33054,7 +33054,7 @@
           "type": "select",
           "response": {
             "correct": "He doesn't know how to lie",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -33229,7 +33229,7 @@
           "type": "select",
           "response": {
             "correct": "0400",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -33425,7 +33425,7 @@
           "type": "select",
           "response": {
             "correct": "Shannon",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -33600,7 +33600,7 @@
           "type": "select",
           "response": {
             "correct": "the General Store",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -33796,7 +33796,7 @@
           "type": "select",
           "response": {
             "correct": ".45",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -33959,7 +33959,7 @@
           "type": "select",
           "response": {
             "correct": "mustache",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -34099,7 +34099,7 @@
           "type": "select",
           "response": {
             "correct": "\"Dear Jethro\"",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -34330,7 +34330,7 @@
           "type": "select",
           "response": {
             "correct": "Gerald Jackson",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -34505,7 +34505,7 @@
           "type": "select",
           "response": {
             "correct": "Kate",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -34701,7 +34701,7 @@
           "type": "select",
           "response": {
             "correct": "\"meth mouth\"",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -34876,7 +34876,7 @@
           "type": "select",
           "response": {
             "correct": "Tony",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -35072,7 +35072,7 @@
           "type": "select",
           "response": {
             "correct": "CPR recertification",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -35247,7 +35247,7 @@
           "type": "select",
           "response": {
             "correct": "Numbers",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -35387,7 +35387,7 @@
           "type": "select",
           "response": {
             "correct": "No one",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -35618,7 +35618,7 @@
           "type": "select",
           "response": {
             "correct": "Semper Fido",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -35793,7 +35793,7 @@
           "type": "select",
           "response": {
             "correct": "The tip of a knife",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -35989,7 +35989,7 @@
           "type": "select",
           "response": {
             "correct": "Tony",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -36128,7 +36128,7 @@
           "type": "select",
           "response": {
             "correct": "No",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -36324,7 +36324,7 @@
           "type": "select",
           "response": {
             "correct": "Beltway Burns",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -36499,7 +36499,7 @@
           "type": "select",
           "response": {
             "correct": "there is no body, only metal weights",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -36695,7 +36695,7 @@
           "type": "select",
           "response": {
             "correct": "on a plane",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -36870,7 +36870,7 @@
           "type": "select",
           "response": {
             "correct": "a body bag",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -37046,7 +37046,7 @@
           "type": "textfield",
           "response": {
             "correct": "AFIS",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -37221,7 +37221,7 @@
           "type": "select",
           "response": {
             "correct": "jazz",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -37417,7 +37417,7 @@
           "type": "select",
           "response": {
             "correct": "Stan",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -37592,7 +37592,7 @@
           "type": "select",
           "response": {
             "correct": "O-",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -37788,7 +37788,7 @@
           "type": "select",
           "response": {
             "correct": "his tie",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -37963,7 +37963,7 @@
           "type": "select",
           "response": {
             "correct": "Sex Wax",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -38159,7 +38159,7 @@
           "type": "select",
           "response": {
             "correct": "Director Jenny Shepard",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -38334,7 +38334,7 @@
           "type": "select",
           "response": {
             "correct": "the CIA computer system",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -38530,7 +38530,7 @@
           "type": "select",
           "response": {
             "correct": "aboard a plane in Wichita, KS",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -38705,7 +38705,7 @@
           "type": "select",
           "response": {
             "correct": "shipment of soft shell crabs",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -38901,7 +38901,7 @@
           "type": "select",
           "response": {
             "correct": "Lilies",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -39076,7 +39076,7 @@
           "type": "select",
           "response": {
             "correct": "a pork chop",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -39272,7 +39272,7 @@
           "type": "select",
           "response": {
             "correct": "he was temporarily speechless",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -39447,7 +39447,7 @@
           "type": "select",
           "response": {
             "correct": "Hayes' father, Captain Hayes, was Dornan's overbearing CO when he was a junior officer",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -39643,7 +39643,7 @@
           "type": "select",
           "response": {
             "correct": "Top Secret",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -39818,7 +39818,7 @@
           "type": "select",
           "response": {
             "correct": "$65,000",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -39994,7 +39994,7 @@
           "type": "textfield",
           "response": {
             "correct": "Edenvale",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -40149,7 +40149,7 @@
           "type": "select",
           "response": {
             "correct": "inside the pants pockets",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -40325,7 +40325,7 @@
           "type": "select",
           "response": {
             "correct": "\"Marine Down\"",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -40500,7 +40500,7 @@
           "type": "select",
           "response": {
             "correct": "\"The Voyeur's Web\"",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -40684,7 +40684,7 @@
           "type": "select",
           "response": {
             "correct": "A glove with his fingerprints",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -40859,7 +40859,7 @@
           "type": "select",
           "response": {
             "correct": "Abby",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -41055,7 +41055,7 @@
           "type": "select",
           "response": {
             "correct": "rifle",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -41230,7 +41230,7 @@
           "type": "select",
           "response": {
             "correct": "Gibbs'",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -41426,7 +41426,7 @@
           "type": "select",
           "response": {
             "correct": "She won't make fun of him and he will refrain from quoting movie references.",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -41601,7 +41601,7 @@
           "type": "select",
           "response": {
             "correct": "cell phones and weapons",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -41797,7 +41797,7 @@
           "type": "select",
           "response": {
             "correct": "Thumper",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -41972,7 +41972,7 @@
           "type": "select",
           "response": {
             "correct": "DiNozzo",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -42112,7 +42112,7 @@
           "type": "select",
           "response": {
             "correct": "China",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -42343,7 +42343,7 @@
           "type": "select",
           "response": {
             "correct": "Commander Ferrell",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -42518,7 +42518,7 @@
           "type": "select",
           "response": {
             "correct": "I see",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -42658,7 +42658,7 @@
           "type": "select",
           "response": {
             "correct": "Jefferson Power",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -42889,7 +42889,7 @@
           "type": "select",
           "response": {
             "correct": "Brain Matter",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -43064,7 +43064,7 @@
           "type": "select",
           "response": {
             "correct": "Stole their boat",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -43260,7 +43260,7 @@
           "type": "select",
           "response": {
             "correct": "Agent McGee",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -43415,7 +43415,7 @@
           "type": "select",
           "response": {
             "correct": "Dasani",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -43555,7 +43555,7 @@
           "type": "select",
           "response": {
             "correct": "Shawn Travis",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -43786,7 +43786,7 @@
           "type": "select",
           "response": {
             "correct": "Lieutenant Mark Schills",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -43941,7 +43941,7 @@
           "type": "select",
           "response": {
             "correct": "Alicia",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -44069,7 +44069,7 @@
           "type": "select",
           "response": {
             "correct": "he/she was shot",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -44288,7 +44288,7 @@
           "type": "select",
           "response": {
             "correct": "aircraft carrier",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -44463,7 +44463,7 @@
           "type": "select",
           "response": {
             "correct": "green",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -44583,7 +44583,7 @@
           "type": "select",
           "response": {
             "correct": "Air Boss",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -44814,7 +44814,7 @@
           "type": "select",
           "response": {
             "correct": "Laido",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -44989,7 +44989,7 @@
           "type": "select",
           "response": {
             "correct": "damage control",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -45129,7 +45129,7 @@
           "type": "select",
           "response": {
             "correct": "the skipper",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -45340,7 +45340,7 @@
           "type": "textfield",
           "response": {
             "correct": "Always watch the watchers",
-            "info": ""
+            "info": null
           }
         },
         {
@@ -45475,7 +45475,7 @@
           "type": "textfield",
           "response": {
             "correct": "not feeling the love right now",
-            "info": ""
+            "info": null
           }
         },
         {

@@ -104,6 +104,11 @@ type UsersTemproles {
   tempRoles    TempRole[]
 }
 
+type UsersTrivia {
+  xp      Int     @default(0)
+  level   Int     @default(0)
+}
+
 type TempRole {
   ms     Int
   roleId String
@@ -113,6 +118,69 @@ type StickyData {
   channel_id String
   message    String
   message_id String
+}
+
+type QuizScore {
+  reached Int
+  max     Int 
+}
+
+enum QuizRating {
+  TOP_5       @map("top 5%")
+  TOP_10      @map("top 10%")
+  TOP_20      @map("top 20%")
+  TOP_35      @map("top 35%")
+  NOT_RATED   @map("not rated")
+}
+
+enum QuizDifficulty {
+  AVERAGE         @map("Average")
+  EASIER          @map("Easier")
+  TOUGH           @map("Tough")
+  VERY_EASY       @map("Very Easy")
+  DIFFICULT       @map("Difficult")
+  VERY_DIFFICULT  @map("Very Difficult")
+}
+
+enum QuizType {
+  SELECT      @map("select")
+  TEXTFIELD   @map("textfield")
+}
+
+
+type QuizInfo {
+  description      String
+  id               String
+  link             String
+  difficulty       QuizDifficulty
+  author           String
+  questionsNumber  Int
+  amountOfPlays    Int
+  rating           QuizRating
+  updated          DateTime
+  score            QuizScore
+  parsed           DateTime
+}
+
+type QuizResponse {
+  correct  String
+  info     String?
+}
+
+type QuizAnswer {
+  hint      String?
+  index     Int
+  text      String?
+  value     String?
+  isCorrect Int?
+}
+
+type QuizDetails {
+  number     Int
+  text       String
+  answers    QuizAnswer[]
+  type       QuizType
+  response   QuizResponse
 }
 
 model blacklisteds {
@@ -211,6 +279,13 @@ model users {
   weekly    Float?
   work      Float?
   xp        Int             @default(0)
+  trivia    UsersTrivia?
+}
+
+model quizzes {
+  id          String          @id @default(auto()) @map("_id") @db.ObjectId
+  info        QuizInfo
+  questions   QuizDetails[]
 }
 
 model warnings {

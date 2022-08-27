@@ -211,10 +211,12 @@
       const correct = infoBox.querySelector("span > b").textContent.trim();
 
       // todo: type, can be null
-      const info =
+      const rawInfo =
         infoBox.childNodes.length >= 3
           ? infoBox.childNodes[infoBox.childNodes.length - 1].textContent.trim()
           : null;
+
+      const info = rawInfo === "" ? null : rawInfo;
 
       const { type } = unsolvedQuestions[i];
 
