@@ -126,30 +126,31 @@ type QuizScore {
 }
 
 enum QuizRating {
-  TOP_5       @map("top 5%")
-  TOP_10      @map("top 10%")
-  TOP_20      @map("top 20%")
-  TOP_35      @map("top 35%")
-  NOT_RATED   @map("not rated")
+  TOP_5       @map(name: "top 5%")
+  TOP_10      @map(name: "top 10%")
+  TOP_20      @map(name: "top 20%")
+  TOP_35      @map(name: "top 35%")
+  NOT_RATED   @map(name: "not rated")
 }
 
 enum QuizDifficulty {
-  AVERAGE         @map("Average")
-  EASIER          @map("Easier")
-  TOUGH           @map("Tough")
-  VERY_EASY       @map("Very Easy")
-  DIFFICULT       @map("Difficult")
-  VERY_DIFFICULT  @map("Very Difficult")
+  AVERAGE         @map(name: "Average")
+  EASIER          @map(name: "Easier")
+  TOUGH           @map(name: "Tough")
+  VERY_EASY       @map(name: "Very Easy")
+  DIFFICULT       @map(name: "Difficult")
+  VERY_DIFFICULT  @map(name: "Very Difficult")
 }
 
 enum QuizType {
-  SELECT      @map("select")
-  TEXTFIELD   @map("textfield")
+  SELECT      @map(name: "select")
+  TEXTFIELD   @map(name: "textfield")
 }
 
 
 type QuizInfo {
   description      String
+  name             String
   id               String
   link             String
   difficulty       QuizDifficulty

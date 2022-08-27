@@ -1433,18 +1433,18 @@
       "updated": "2021-06-24T17:25:00.000Z"
     }
   },
-  "questions": [
+  "quizzes": [
     {
       "info": {
         "description": "How well do you know \"NCIS\"? Take this quiz to prove how big of a fan you really are!",
         "name": "\"NCIS\": How Much Do You Know? Part 1 Quiz",
         "id": "318306",
         "link": "https://www.funtrivia.com/trivia-quiz/Television/NCIS-How-Much-Do-You-Know-Part-1-318306.html",
-        "difficulty": "Average",
+        "difficulty": "AVERAGE",
         "author": "TRNchick",
         "questionsNumber": 10,
         "amountOfPlays": 12312,
-        "rating": "top 5%",
+        "rating": "TOP_5",
         "updated": "2021-12-02T23:00:00.000Z",
         "score": {
           "reached": 7,
@@ -1482,7 +1482,7 @@
               "isCorrect": false
             }
           ],
-          "type": "select",
+          "type": "SELECT",
           "response": {
             "correct": "Tommy and Lisa",
             "info": "After a psycho started killing off the real life inspirations of the characters in his book, McGee was forced to admit the truth."
@@ -1517,7 +1517,7 @@
               "isCorrect": false
             }
           ],
-          "type": "select",
+          "type": "SELECT",
           "response": {
             "correct": "Abby",
             "info": "He always takes Abby out to dinner for her birthday. In one particular episode, she was quit distraught, assuming that Jethro had forgotten about her birthday because he was busy working a case. After being very short with Jethro for most of the day, Abby realized that Jethro had some how managed to slip past her and leave a gift on her desk! Jethro loves using those sneaky sniper skills he has!"
@@ -1552,7 +1552,7 @@
               "isCorrect": false
             }
           ],
-          "type": "select",
+          "type": "SELECT",
           "response": {
             "correct": "a Kate",
             "info": null
@@ -1622,7 +1622,7 @@
               "isCorrect": false
             }
           ],
-          "type": "select",
+          "type": "SELECT",
           "response": {
             "correct": "a wood chisel",
             "info": "Ziva knows that Gibbs doesn't use power tools when he builds boats. For this reason a skill saw and power sander are out of the question, and Jethro doesn't need a lathe to build a boat. Jethro accepts the gift, but later questions Ziva about her true intentions for wanting to rejoin the team."
@@ -1657,7 +1657,7 @@
               "isCorrect": true
             }
           ],
-          "type": "select",
+          "type": "SELECT",
           "response": {
             "correct": "mishandled evidence",
             "info": "While Abby and McGee were going through some evidence that the police had given them regarding a case, Abby asks McGee if he knows what her biggest pet peeve is. He tells her, \"people who claim to be vegetarians but eat chicken?\" Surprised he remembered, Abby asks him if he knows her second biggest pet peeve. McGee then replies, \"mishandled evidence.\" Pleasantly surprised, Abby then proceeds to rant about what is wrong with the evidence they received."
@@ -1692,7 +1692,7 @@
               "isCorrect": false
             }
           ],
-          "type": "select",
+          "type": "SELECT",
           "response": {
             "correct": "bicarbonate soda",
             "info": "After some translation back into normal terms, McGee discovers the ingredients are the same as the ones Gibbs recommended. Unlike Gibbs, Abby is nice enough to mix him up a batch!"
@@ -1727,7 +1727,7 @@
               "isCorrect": false
             }
           ],
-          "type": "select",
+          "type": "SELECT",
           "response": {
             "correct": "Star of David",
             "info": null
@@ -1762,7 +1762,7 @@
               "isCorrect": false
             }
           ],
-          "type": "select",
+          "type": "SELECT",
           "response": {
             "correct": "a cross",
             "info": "In the opening credits, one of the clips shows Abby with her back to the camera changing shirts. This shot clearly shows the huge tattoo of a cross on her back. I believe you can also see the cross during the earlier Halloween episode when Abby is dressed as Marilyn Monroe."
@@ -1797,7 +1797,7 @@
               "isCorrect": false
             }
           ],
-          "type": "select",
+          "type": "SELECT",
           "response": {
             "correct": "coincidences",
             "info": "Gibbs has been married four times, so he obviously believes in the notion of marriage. The way he talks about his last three wives, he most certainly believes in divorce. When he has flashbacks of his wife and daughter you can be very certain that he loved them. As any of his team could tell you, he 100% does not believe in coincidences!"
