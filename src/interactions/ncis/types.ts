@@ -34,6 +34,8 @@ export type QuestionDifficulty =
 
 export type QuestionRating = "top 10%" | "top 5%" | "top 20%" | "well" | "not rated";
 
+// well == "top 35%" ????!
+
 export type URLString = string;
 
 export interface SingleQuestionCollection {
@@ -48,3 +50,5 @@ export interface SingleQuestionCollection {
   rating: QuestionRating;
   parsed: DateString;
 }
+
+// TODO questions types
