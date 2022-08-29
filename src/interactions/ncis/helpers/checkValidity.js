@@ -1,14 +1,14 @@
 const allQuestions = require("../questions.json");
 
-const catergoriesToCheck = ["main", "characters", "episodes", "quotes"];
+const categoriesToCheck = ["main", "characters", "episodes", "quotes"];
 
 const cats = [];
 
-for (const cat of catergoriesToCheck) {
+for (const cat of categoriesToCheck) {
   cats.push(...allQuestions.categories[cat].questions);
 }
 
-const availableQuestions = allQuestions.questions;
+const availableQuestions = allQuestions.quizzes;
 
 const duplicateQuestions = availableQuestions
   .map(({ info: { id } }) => id)
@@ -24,11 +24,29 @@ for (const question of cats) {
   }
 }
 
+const wrongDefinitions = [];
+
+function validateQuiz(quiz) {
+  if (!quiz?.info?.description) {
+    return false;
+  }
+
+  return true;
+}
+
+for (const question of availableQuestions) {
+  if (!validateQuiz(question)) {
+    wrongDefinitions.push(question);
+  }
+}
+
 console.log("duplicates:", duplicateQuestions, duplicateQuestions.length);
 
 console.log("missingQuestions:", missingQuestions, missingQuestions.length);
 
-const failed = missingQuestions.length + duplicateQuestions.length;
+console.log("wrongDefinitions:", wrongDefinitions, wrongDefinitions.length);
+
+const failed = missingQuestions.length + duplicateQuestions.length + wrongDefinitions.length;
 
 if (failed == 0) {
   console.log("Everything is VALID!");

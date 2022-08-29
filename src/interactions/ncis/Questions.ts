@@ -28,6 +28,7 @@ export type IDString = string;
 export type QuizDifficulty =
   | "Average"
   | "Easier"
+  | "Easy"
   | "Tough"
   | "Very Easy"
   | "Difficult"

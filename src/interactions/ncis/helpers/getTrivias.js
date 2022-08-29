@@ -1,3 +1,5 @@
+// TODO: when importing new map Average => AVERAGE, top 5% => TOP_5 and select => SELECT etc...
+
 (() => {
   print = console.log;
 

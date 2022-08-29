@@ -136,6 +136,7 @@ enum QuizRating {
 enum QuizDifficulty {
   AVERAGE         @map(name: "Average")
   EASIER          @map(name: "Easier")
+  EASY            @map(name: "Easy")
   TOUGH           @map(name: "Tough")
   VERY_EASY       @map(name: "Very Easy")
   DIFFICULT       @map(name: "Difficult")
@@ -173,7 +174,7 @@ type QuizAnswer {
   index     Int
   text      String?
   value     String?
-  isCorrect Int?
+  isCorrect Boolean?
 }
 
 type QuizDetails {
