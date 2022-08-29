@@ -16,6 +16,7 @@ const ENV_OPTIONS: EnvOptions[] = [
   { name: "BUG_REPORTS_CHANNEL_ID", value: process.env["BUG_REPORTS_CHANNEL_ID"] },
   { name: "IMDB_KEY", value: process.env["IMDB_KEY"] },
   { name: "FEEDBACK_CHANNEL_ID", value: process.env["FEEDBACK_CHANNEL_ID"] },
+  { name: "TRIVIA_CHANNEL_ID", value: process.env["TRIVIA_CHANNEL_ID"] },
   { name: "OPEN_WEATHER_MAP_API_KEY", value: process.env["OPEN_WEATHER_MAP_API_KEY"] },
   { name: "ERRORLOGS_CHANNEL_ID", value: process.env["ERRORLOGS_CHANNEL_ID"] },
   { name: "GIPHY_API_KEY", value: process.env["GIPHY_API_KEY"] },

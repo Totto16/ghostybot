@@ -110,17 +110,39 @@ export class InteractionHandler {
 
         await this.createCommand(data);
       }
+
+      await this.deleteCommands();
     } catch (e) {
       console.error(e);
     }
   }
 
   async createCommand(data: DJS.ApplicationCommandData) {
+    if (process.env.DELETE_PREVIOUS_COMMANDS === "true") {
+      return;
+    }
     if (process.env.DEV_MODE === "true") {
-      const g = await this.bot.guilds.fetch("841737902065057823");
+      const g = await this.bot.guilds.fetch("862139440872423434");
       await g.commands.create(data).catch(console.error);
     } else {
       await this.bot.application?.commands.create(data);
+    }
+  }
+
+  async deleteCommands() {
+    let commands: DJS.ApplicationCommandManager | DJS.GuildApplicationCommandManager | undefined =
+      this.bot.application?.commands;
+    if (process.env.DEV_MODE === "true") {
+      const g = await this.bot.guilds.fetch("862139440872423434");
+      commands = g.commands;
+    }
+
+    if (process.env.DELETE_PREVIOUS_COMMANDS === "true" && commands) {
+      const allCommands = commands.cache;
+      for (const [key] of allCommands) {
+        commands.delete(key);
+      }
+      this.bot.logger.log("INTERACTIONS", "successfully deleted all interactions");
     }
   }
 }
