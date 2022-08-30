@@ -5,6 +5,7 @@ import { Bot } from "structures/Bot";
 import { ApiRequest } from "types/ApiRequest";
 import { prisma } from "./prisma";
 import { Prisma } from "@prisma/client";
+import { defaultTriviaObject } from "./triviaHelper";
 
 export class Util {
   bot: Bot;
@@ -50,7 +51,7 @@ export class Util {
       const user =
         (await prisma.users.findFirst({
           where: { user_id: userId, guild_id: guildId },
-        })) ?? (await this.addUser(userId, guildId));
+        })) ?? (await this.addUser(userId, guildId, { trivia: defaultTriviaObject }));
 
       return user;
     } catch (error) {

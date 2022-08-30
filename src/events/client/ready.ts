@@ -3,6 +3,7 @@ import { Bot } from "structures/Bot";
 import { Event } from "structures/Event";
 import { HelperHandler } from "handlers/HelperHandler";
 import { InteractionHandler } from "handlers/InteractionHandler";
+import { getRandomFromArray, getTriviaQuestionAmount } from "utils/triviaHelper";
 
 export default class ReadyEvent extends Event {
   constructor(bot: Bot) {
@@ -16,10 +17,9 @@ export default class ReadyEvent extends Event {
       bot.guilds.cache.reduce((a, g) => a + g.memberCount, 0),
     );
 
-    const statuses: {
-      type: DJS.ActivityType.Listening | DJS.ActivityType.Watching;
-      value: string;
-    }[] = [
+    const questionsAmount = await getTriviaQuestionAmount();
+
+    const statuses: CustomStatus[] = [
       {
         type: DJS.ActivityType.Listening,
         value: "/help",
@@ -34,11 +34,15 @@ export default class ReadyEvent extends Event {
       },
       {
         type: DJS.ActivityType.Watching,
-        value: "https://discord.gg/XxHrtkA",
+        value: "https://discord.gg/RCUCYMwcQS",
       },
       {
         type: DJS.ActivityType.Watching,
-        value: "https://ghostybot.caspertheghost.me",
+        value: "https://ncis-fans.ml/",
+      },
+      {
+        type: DJS.ActivityType.Playing,
+        value: `Trivia with ${questionsAmount} questions`,
       },
     ];
 
@@ -54,10 +58,19 @@ export default class ReadyEvent extends Event {
       `Bot is running with ${channelCount} channels, ${userCount} users and ${serverCount} servers`,
     );
 
-    setInterval(() => {
-      const status = statuses[Math.floor(Math.random() * statuses.length)];
+    const setRandomStatus = () => {
+      const status = getRandomFromArray<CustomStatus>(statuses).element;
 
       bot.user?.setActivity(status.value, { type: status.type! });
-    }, 60_000);
+      console.log("set status: ", status);
+    };
+
+    setRandomStatus();
+    setInterval(setRandomStatus, 60_000);
   }
+}
+
+export interface CustomStatus {
+  type: Exclude<DJS.ActivityType, DJS.ActivityType.Custom>;
+  value: string;
 }

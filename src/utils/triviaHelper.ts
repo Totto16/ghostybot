@@ -1,11 +1,17 @@
-import { users } from "@prisma/client";
+import { QuizDetails, QuizDifficulty, quizzes, users } from "@prisma/client";
 import sharp from "sharp";
 import * as DJS from "discord.js";
+import { prisma } from "./prisma";
+import crypto from "node:crypto";
+import { bold } from "discord.js";
 
 const CONSTANTS = {
   base: 100,
   percent: 10,
   places: [":first_place:", ":second_place:", ":third_place:"],
+  discordColor: { r: 54, g: 57, b: 63 },
+  ONLINE_PARSED_TEXT: "This question is parsed online, if any Errors occur feel free to contact me",
+  FATAL_ERROR: "THIS IS AN ERROR; PLEASE REPORT THIS!",
 };
 
 export function isInValidTriviaChannel(channelId: string): boolean {
@@ -14,7 +20,7 @@ export function isInValidTriviaChannel(channelId: string): boolean {
 }
 
 export function getProgressInt(user: users) {
-  return (getExistingPoints(user).level * 100) / getPointsToLevelUp(user.trivia?.level ?? 0);
+  return (getExistingPoints(user).xp * 100) / getPointsToLevelUp(user.trivia?.level ?? 1);
 }
 
 export function getPointsToLevelUp(lvl: number): number {
@@ -26,7 +32,7 @@ export function getExistingPoints(user: users) {
   let currentXp = user.trivia?.xp ?? 0;
   let canAdvance = true;
   do {
-    const pointsToLevelUp = getPointsToLevelUp(user.trivia?.level ?? 0);
+    const pointsToLevelUp = getPointsToLevelUp(user.trivia?.level ?? 1);
     if (currentXp >= pointsToLevelUp) {
       ++level;
       currentXp -= pointsToLevelUp;
@@ -47,22 +53,27 @@ export async function getProgressImage(users: UserInformation, color: ColorArray
   const height = 25;
   const progress = getProgressInt(users.dbUser);
 
-  const wo = Math.floor(width * (progress / 100));
+  let widthOffset = Math.floor(width * (progress / 100));
+
+  if (widthOffset === 0) {
+    widthOffset = 1;
+    color = colorObjectToArray(CONSTANTS.discordColor);
+  }
 
   const image = await sharp({
     create: {
-      width: wo,
+      width: widthOffset,
       height,
       channels: 3,
-      background: { r: color[0], g: color[1], b: color[2] },
+      background: colorArrayToObject(color),
     },
   })
     .extend({
       top: 0,
       bottom: 0,
       left: 0,
-      right: width - wo,
-      background: { r: 54, g: 57, b: 63 },
+      right: width - widthOffset,
+      background: CONSTANTS.discordColor,
     })
     .png()
     .toBuffer();
@@ -108,36 +119,62 @@ export function getRankColor(place: number, total: number): ColorArray {
   return color;
 }
 
-async function getPlaceOfUser(users: UserInformation, allUsers: users[]) {
-  return allUsers
-    .map((user) => user.trivia?.xp)
-    .sort()
-    .indexOf(users.dbUser.trivia?.xp);
+export interface UserWithRank extends users {
+  rank: number;
+}
+
+async function getPlaceOfUser(users: UserInformation) {
+  const aggregations: UserWithRank[] = (await prisma.users.aggregateRaw({
+    pipeline: [
+      {
+        $setWindowFields: {
+          sortBy: {
+            "trivia.xp": -1,
+          },
+          output: {
+            rank: {
+              $rank: {},
+            },
+          },
+        },
+      },
+    ],
+  })) as unknown as UserWithRank[];
+
+  const user_id = users.dbUser.user_id;
+
+  // attention 1 indexed !!!!
+  const rank = aggregations.filter((user) => user.user_id === user_id)[0].rank;
+
+  return { rank, amount: aggregations.length };
 }
 
 export async function getProfileEmbed(baseEmbed: DJS.EmbedBuilder, users: UserInformation) {
-  const allUsers: users[] = [];
-  const place = await getPlaceOfUser(users, allUsers);
-  const color = getRankColor(place, allUsers.length);
+  const { discordUser, dbUser } = users;
+  const { rank, amount } = await getPlaceOfUser(users);
+  const color = getRankColor(rank, amount);
   const { attachment, attachmentUrl } = await getProgressImage(users, color);
+
+  const avatar = discordUser.displayAvatarURL();
 
   const embed = baseEmbed
     .setTitle(`Trivia Profile of ${users.discordUser.username} `)
     .setColor(color)
+    .setThumbnail(avatar)
     .addFields(
       {
         name: "Points",
-        value: (users.dbUser.trivia?.xp ?? 0).toString(),
+        value: (dbUser.trivia?.xp ?? 0).toString(),
         inline: true,
       },
       {
         name: "Level",
-        value: (users.dbUser.trivia?.level ?? 0).toString(),
+        value: (dbUser.trivia?.level ?? 1).toString(),
         inline: true,
       },
       {
         name: "Rank",
-        value: `${place + 1}.${place < 3 ? ` ${CONSTANTS.places[place] ?? ""}` : ""}`,
+        value: `${rank}.${rank <= 3 ? ` ${CONSTANTS.places[rank - 1] ?? ""}` : ""}`,
         inline: true,
       },
     )
@@ -214,4 +251,131 @@ function RGBToHex({ r, g, b }: RGBObject): DJS.HexColorString {
   const bString = b.toString(16).padStart(2, "0");
 
   return `#${rString}${gString}${bString}`;
+}
+
+export function colorArrayToObject([r, g, b]: ColorArray): RGBObject {
+  return { r, g, b };
+}
+
+export function colorObjectToArray({ r, g, b }: RGBObject): ColorArray {
+  return [r, g, b];
+}
+
+export async function createTriviaForUser(user: users): Promise<users> {
+  return prisma.users.update({
+    where: { id: user.id },
+    data: { trivia: { set: defaultTriviaObject } },
+  });
+}
+
+export const defaultTriviaObject = { xp: 0, level: 1, playing: 0 };
+
+export function getRandomFromArray<T>(array: T[]): { index: number; element: T } {
+  const index = crypto.randomInt(array.length);
+  return { element: array[index], index };
+}
+
+export async function getQuestionEmbed(
+  baseEmbed: DJS.EmbedBuilder,
+  users: UserInformation,
+  quiz: quizzes,
+  question: QuizDetails,
+  questionIndex: number,
+) {
+  const { discordUser } = users;
+  const color = getDifficultyColor(quiz.info.difficulty);
+
+  const avatar = discordUser.displayAvatarURL();
+
+  // TODO: ATTENTION for limits of certain fields!!!!
+
+  let fields: DJS.APIEmbedField[] = [];
+  let rawComponents: DJS.ButtonBuilder[] = [];
+  switch (question.type) {
+    case "SELECT":
+      {
+        const answers = question.answers;
+        fields = [];
+        rawComponents = [];
+        for (let i = 0; i < answers.length; ++i) {
+          const { text } = answers[i];
+          const letter = getIdentificationFromIndex(i);
+
+          fields.push({
+            name: `${bold(letter)}`,
+            value: text ?? CONSTANTS.FATAL_ERROR,
+            inline: false,
+          });
+
+          // TODO: don't get over 100 chars with the custom id!!! . make a separate function for that, to reuse it later
+
+          const button = new DJS.ButtonBuilder()
+            .setCustomId(`${discordUser.id}-${quiz.id}-${questionIndex}-${i}`)
+            .setLabel(letter)
+            .setStyle(DJS.ButtonStyle.Primary);
+
+          rawComponents.push(button);
+        }
+      }
+      break;
+    case "TEXTFIELD":
+      {
+        const [singleAnswer] = question.answers;
+        fields = singleAnswer.hint
+          ? [{ name: "hint", inline: true, value: singleAnswer.hint }]
+          : [];
+        rawComponents = [];
+      }
+      break;
+    default:
+      throw new Error(`FATAL, type not known: ${question.type}`);
+  }
+
+  const embed = baseEmbed
+    .setFooter({ text: CONSTANTS.ONLINE_PARSED_TEXT, iconURL: avatar })
+    .setTitle(question.text)
+    .setColor(color)
+    .addFields(...fields);
+
+  const components: DJS.ActionRowBuilder<DJS.ButtonBuilder>[] = [];
+
+  for (let i = 0; i < rawComponents.length; i += 5) {
+    const row = new DJS.ActionRowBuilder<DJS.ButtonBuilder>().addComponents(
+      ...rawComponents.slice(i, Math.min(i + 5, rawComponents.length)),
+    );
+    components.push(row);
+  }
+
+  return { embed, components };
+}
+
+export type QuizDifficultyMap = {
+  [key in QuizDifficulty]: DJS.HexColorString;
+};
+
+export const quizDifficultyMap: QuizDifficultyMap = {
+  AVERAGE: "#000066",
+  EASIER: "#009900",
+  EASY: "#009900",
+  TOUGH: "#990000",
+  VERY_EASY: "#006600",
+  DIFFICULT: "#CC0000",
+  VERY_DIFFICULT: "#FF0000",
+};
+
+export function getDifficultyColor(difficulty: QuizDifficulty): DJS.HexColorString {
+  return quizDifficultyMap[difficulty];
+}
+
+export function getIdentificationFromIndex(index: number, upperCase = true) {
+  const temp = String.fromCharCode("a".charCodeAt(0) + index);
+  return upperCase ? temp.toUpperCase() : temp;
+}
+
+export async function getTriviaQuestionAmount(): Promise<number> {
+  const aggregations = (await prisma.quizzes.aggregateRaw({
+    pipeline: [{ $unwind: "$questions" }],
+  })) as unknown as QuizDetails[];
+
+  return aggregations.length;
 }

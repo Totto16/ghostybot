@@ -107,6 +107,7 @@ type UsersTemproles {
 type UsersTrivia {
   xp      Int     @default(0)
   level   Int     @default(0)
+  playing Int     @default(0)
 }
 
 type TempRole {

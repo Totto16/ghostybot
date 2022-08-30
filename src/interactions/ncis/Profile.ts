@@ -3,7 +3,7 @@ import { Bot } from "structures/Bot";
 import { SubCommand } from "structures/Command/SubCommand";
 import process from "node:process";
 import { ValidateReturn } from "structures/Command/BaseCommand";
-import { isInValidTriviaChannel, getProfileEmbed } from "utils/triviaHelper";
+import { isInValidTriviaChannel, getProfileEmbed, createTriviaForUser } from "utils/triviaHelper";
 
 export default class ProfileCommand extends SubCommand {
   constructor(bot: Bot) {
@@ -53,14 +53,13 @@ export default class ProfileCommand extends SubCommand {
       return interaction.reply({ ephemeral, content: lang.MEMBER.BOT_DATA });
     }
 
-    const dbUser = await this.bot.utils.getUserById(user.id, interaction.guildId!);
+    let dbUser = await this.bot.utils.getUserById(user.id, interaction.guildId!);
     if (!dbUser) {
       return interaction.reply({ ephemeral, content: lang.GLOBAL.ERROR });
     }
 
-    const { trivia } = dbUser;
-    if (!trivia) {
-      dbUser.trivia = { xp: 0, level: 1 };
+    if (!dbUser.trivia) {
+      dbUser = await createTriviaForUser(dbUser);
     }
 
     if (interaction.channel === null || !isInValidTriviaChannel(interaction.channelId)) {
@@ -73,9 +72,10 @@ export default class ProfileCommand extends SubCommand {
     const baseEmbed = this.bot.utils.baseEmbed(interaction);
 
     const { embed, attachment } = await getProfileEmbed(baseEmbed, {
-      discordUser: interaction.user,
+      discordUser: user,
       dbUser,
     });
+
     await interaction.reply({ ephemeral, embeds: [embed], files: [attachment] });
   }
 }
